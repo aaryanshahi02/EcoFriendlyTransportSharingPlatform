@@ -1,61 +1,27 @@
-# Eco-Friendly Transport Sharing Platform
+ # Eco-Friendly Transport Sharing Platform
 
-An eco-friendly transport-sharing platform built to help reduce carbon emissions by connecting users for shared rides. This project allows users to register, log in, and book or offer a ride. Developed using HTML, CSS, JavaScript, PHP, and MySQL.
+A Java-based eco-friendly transport-sharing platform that allows users to share rides and reduce environmental impact. This project uses JDBC for database connectivity with MySQL and follows the Data Access Object (DAO) design pattern.
+
+## Project Structure
+
+src ├── com.ecotransport │ ├── Main.java │ ├── Config.java ├── com.ecotransport.model │ ├── User.java │ ├── Vehicle.java │ └── Ride.java └── com.ecotransport.dao ├── UserDAO.java ├── VehicleDAO.java └── RideDAO.java
+
+sql
+Copy code
+
+## Database Setup
+
+1. Create a MySQL database named `eco_transport`.
 
 
-# Table of Contents
-- Features
-- Tech Stack
-- Project Structure
-- Usage
-- Database Schema
-- Future Improvements
+## Configuration
+Update Config.java with your MySQL credentials:
 
-# Features
-- User Registration & Login: Secure registration and login with password hashing.
-- Ride Booking: Users can book rides by providing pickup, drop location, and date.
-- How It Works: Describes the benefits and working of the platform.
-- Responsive Design: Accessible on various devices.
-# Tech Stack
-- Frontend: HTML5, CSS3, JavaScript
-- Backend: PHP, MySQL
-- Web Server: Apache or Nginx
-# Project Structure
+public static final String URL = "jdbc:mysql://localhost:3306/eco_transport";
+public static final String USER = "yourUsername";
+public static final String PASSWORD = "yourPassword";
 
-EcoTransportSharingPlatform
-
-├── index.html           # Main HTML page
-
-├── styles.css           # Styles for the project
-
-├── scripts.js           # JavaScript for interactivity and AJAX requests
-
-├── php/                 # PHP backend scripts
-
-│   ├── db_config.php    # Database configuration
-
-│   ├── register.php     # User registration
-
-│   ├── login.php        # User login
-
-│   └── book_ride.php    # Ride booking
-
-└── README.md            # Documentation
-
-# Usage
-- Register a New User: Go to "Register/Login" and fill in the registration form.
-
-- Login: Log in using registered credentials.
-
-- Book a Ride: Go to "Book a Ride," and fill in the required details.
-
-- Explore "How It Works": Understand the benefits and working of eco-friendly ride-sharing.
-
-# Database Schema
-- users: Stores user information with hashed passwords.
-- rides: Stores ride booking information for each user.
-
-# Future Improvements
-- User Profiles: Add profiles to manage and view past rides.
-- Rating System: Allow users to rate their ride experiences.
-- Email Notifications: Notify users of booking status via email.
+## Usage
+Add a User: Create a User object and use UserDAO.addUser().
+Fetch a User: Use UserDAO.getUserById() with the user ID.
+Add a Vehicle/Ride: Create Vehicle or Ride objects and use their respective DAO classes.
