@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Transport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eco Transport Sharing Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('ride')">Book a Ride</a></li>
+                <li><a href="#" onclick="showSection('register')">Register/Login</a></li>
+                <li><a href="#" onclick="showSection('info')">How It Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <h2>Share a Ride, Save the Planet!</h2>
+        <p>Join our eco-friendly ride-sharing platform and help reduce your carbon footprint.</p>
+        <a href="#" class="btn" onclick="showSection('register')">Get Started</a>
+    </section>
+
+    <!-- Ride Booking Section -->
+    <section id="ride" class="section">
+        <h2>Book a Ride</h2>
+        <form id="rideForm">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+
+            <label for="drop">Drop Location:</label>
+            <input type="text" id="drop" name="drop" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="btn">Book Ride</button>
+        </form>
+    </section>
+
+    <!-- Register/Login Section -->
+    <section id="register" class="section">
+        <h2>Register/Login</h2>
+        <form id="registerForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="info" class="section">
+        <h2>How It Works</h2>
+        <p>Our platform connects you with people who are traveling in the same direction. Share a ride and reduce emissions!</p>
+        <ol>
+            <li>Register on our platform.</li>
+            <li>Search for available rides or offer your own ride.</li>
+            <li>Enjoy your eco-friendly journey!</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eco Transport</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
