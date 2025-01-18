@@ -6,8 +6,7 @@ A Java-based eco-friendly transport-sharing platform that allows users to share 
 
 EcoTransport/ ├── src/ │ ├── dao/ │ │ └── UserDAO.java │ ├── model/ │ │ └── User.java │ ├── servlets/ │ │ ├── RegisterServlet.java │ │ ├── LoginServlet.java │ │ └── ProfileServlet.java ├── WebContent/ │ ├── WEB-INF/ │ │ ├── web.xml │ │ └── lib/ │ │ └── jstl.jar │ ├── jsp/ │ │ ├── register.jsp │ │ ├── login.jsp │ │ ├── profile.jsp │ │ └── userlist.jsp │ ├── index.jsp │ ├── header.jsp │ ├── footer.jsp │ ├── styles.css │ ├── scripts.js ├── database/ │ └── schema.sql └── test/ └── dao/ └── UserDAOTest.java
 
-sql
-Copy code
+
 
 ## Database Setup
 
