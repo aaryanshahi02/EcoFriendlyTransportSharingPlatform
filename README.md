@@ -4,7 +4,7 @@ A Java-based eco-friendly transport-sharing platform that allows users to share 
 
 ## Project Structure
 
-src ├── com.ecotransport │ ├── Main.java │ ├── Config.java ├── com.ecotransport.model │ ├── User.java │ ├── Vehicle.java │ └── Ride.java └── com.ecotransport.dao ├── UserDAO.java ├── VehicleDAO.java └── RideDAO.java
+EcoTransport/ ├── src/ │ ├── dao/ │ │ └── UserDAO.java │ ├── model/ │ │ └── User.java │ ├── servlets/ │ │ ├── RegisterServlet.java │ │ ├── LoginServlet.java │ │ └── ProfileServlet.java ├── WebContent/ │ ├── WEB-INF/ │ │ ├── web.xml │ │ └── lib/ │ │ └── jstl.jar │ ├── jsp/ │ │ ├── register.jsp │ │ ├── login.jsp │ │ ├── profile.jsp │ │ └── userlist.jsp │ ├── index.jsp │ ├── header.jsp │ ├── footer.jsp │ ├── styles.css │ ├── scripts.js ├── database/ │ └── schema.sql └── test/ └── dao/ └── UserDAOTest.java
 
 sql
 Copy code
